@@ -11,7 +11,7 @@ body {
 
 /* NAVIGATION */
 
-#whitey {
+#navCOLOR {
   background-color: black;
 }
 #navURL {
@@ -54,13 +54,26 @@ body {
 
 /* SECOND PAGE */
 
-.images {
-  padding-top: 5px;
+.secondpagefont {
+  font-family: 'Roboto Slab', serif;
+  font-size: 46px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center
+}
+
+.motivators {
+  font-family: 'Roboto Slab', serif;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 #page2backrnd {
-  background-color: white;
+  background-color: #7E7D7D;
+}
+
+.movies {
+  padding-top: 20px
 }
