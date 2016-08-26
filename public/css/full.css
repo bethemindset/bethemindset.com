@@ -51,6 +51,13 @@ body {
 
 /* SECOND PAGE */
 
+.images {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 #page2backrnd {
   background-color: white;
 }
