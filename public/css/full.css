@@ -11,14 +11,17 @@ body {
 
 /* NAVIGATION */
 
+#whitey {
+  background-color: black;
+}
 #navURL {
-    color: white;
+    color: #f03e53;
     font-family: 'Roboto Slab', serif;
 }
 
 .navFONT {
   font-family: 'Roboto Slab', serif;
-
+  color: #f03e53;
 }
 
 /* MAIN PAGE */
