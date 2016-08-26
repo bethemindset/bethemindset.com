@@ -77,3 +77,10 @@ body {
 .movies {
   padding-top: 20px
 }
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  text-align: center;
+}
