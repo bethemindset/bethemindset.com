@@ -11,6 +11,10 @@ body {
 
 /* NAVIGATION */
 
+#navURL {
+    color: white;
+}
+
 /* MAIN PAGE */
 
 .full {
@@ -23,30 +27,6 @@ body {
 
 /* MAIN PHOTO */
 
-.bee {
-  position: relative;
-  transform: rotate(270deg);
-  left: 20px;
-}
-
-.thee {
-  position: relative;
-  left: 144px;
-  top: -144px;
-}
-
-.mindsete {
-  position: relative;
-  transform: rotate(90deg);
-  right: 18px;
-}
-
-.come {
-  position: relative;
-  right: 207px;
-  top: 144px;
-}
-
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -54,7 +34,6 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  padding-left: 40px;
 }
 
 .imgBORD {
