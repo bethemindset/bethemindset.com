@@ -1,0 +1,23 @@
+{
+  "name": "bethemindset.com",
+  "version": "1.0.0",
+  "description": "Moving the repo here",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bethemindset/bethemindset.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bethemindset/bethemindset.com/issues"
+  },
+  "homepage": "https://github.com/bethemindset/bethemindset.com#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
+}
