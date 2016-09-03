@@ -1,2 +1,2 @@
 #bethemindset.com
-Moving the repo here
+Erik Batista and Paul Borawski's site.
