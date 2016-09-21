@@ -78,6 +78,12 @@ body {
   padding-top: 20px
 }
 
+iframe {
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+}
+
 /* FOOTER */
 
 footer {
