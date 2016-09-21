@@ -82,6 +82,7 @@ iframe {
   border-style: solid;
   border-color: white;
   border-width: 2px;
+  border-radius: 2px;
 }
 
 /* FOOTER */
