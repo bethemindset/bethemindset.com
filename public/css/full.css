@@ -85,6 +85,12 @@ iframe {
   border-radius: 2px;
 }
 
+#photy {
+  background-color: #7E7D7D;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 /* FOOTER */
 
 footer {
