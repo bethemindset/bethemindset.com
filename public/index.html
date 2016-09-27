@@ -94,16 +94,8 @@
       <div class="col-md-6">
         <iframe class="fit" src="https://www.youtube.com/embed/bVV2RFEiqN4" frameborder="0" allowfullscreen></iframe>
       </div>
-      <div class="col-md-6">
-        <iframe class="fit" src="https://www.youtube.com/embed/bVV2RFEiqN4" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        <iframe class="fit" src="https://www.youtube.com/embed/bVV2RFEiqN4" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-md-6">
-        <iframe class="fit" src="https://www.youtube.com/embed/bVV2RFEiqN4" frameborder="0" allowfullscreen></iframe>
+     <div class="col-md-6">
+        <iframe class="fit2" src="https://www.youtube.com/embed/bVV2RFEiqN4" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -116,11 +108,23 @@
   </div>
 </footer>
 
+<script src="js/custom.js"></script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+<script>
+var videoDiv = document.querySelector('.fit')
+var getWidth = $(videoDiv).width()
+videoDiv.style.height = (getWidth / 16 * 9 + 'px').toString()
+
+var videoDiv2 = document.querySelector('.fit2')
+var getWidthy = $(videoDiv2).width()
+videoDiv2.style.height = (getWidthy / 16 * 9 + 'px').toString()
+
+</script>
 
 </body>
 
