@@ -54,6 +54,10 @@ body {
 
 /* SECOND PAGE */
 
+.outsidePadding {
+  padding: 0px 30px;
+}
+
 .secondpagefont {
   font-family: 'Roboto Slab', serif;
   font-size: 46px;
