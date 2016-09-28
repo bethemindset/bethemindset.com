@@ -97,7 +97,7 @@
      <div class="col-md-6">
         <iframe class="fit2" src="https://www.youtube.com/embed/bVV2RFEiqN4" frameborder="0" allowfullscreen></iframe>
       </div>
-    </div>  
+    </div>
       <div class="row">
         <div class="col-md-6">
           <iframe class="fit3" src="https://www.youtube.com/embed/bVV2RFEiqN4" frameborder="0" allowfullscreen></iframe>
@@ -124,21 +124,35 @@
     <script src="js/bootstrap.min.js"></script>
 
 <script>
-var videoDiv = document.querySelector('.fit')
-var getWidth = $(videoDiv).width()
-videoDiv.style.height = (getWidth / 16 * 9 + 'px').toString()
+function a() {
+  var videoDiv = document.querySelector('.fit')
+  var getWidth = $(videoDiv).width()
+  return videoDiv.style.height = (getWidth / 16 * 9 + 'px').toString()
+}
 
+function b() {
 var videoDiv2 = document.querySelector('.fit2')
 var getWidthy = $(videoDiv2).width()
 videoDiv2.style.height = (getWidthy / 16 * 9 + 'px').toString()
+}
 
+function c() {
 var videoDiv2 = document.querySelector('.fit3')
 var getWidthy = $(videoDiv2).width()
 videoDiv2.style.height = (getWidthy / 16 * 9 + 'px').toString()
+}
 
+function d() {
 var videoDiv2 = document.querySelector('.fit4')
 var getWidthy = $(videoDiv2).width()
 videoDiv2.style.height = (getWidthy / 16 * 9 + 'px').toString()
+}
+a()
+b()
+c()
+d()
+
+
 
 </script>
 
