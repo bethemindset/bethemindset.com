@@ -85,11 +85,7 @@ iframe {
   border-radius: 2px;
 }
 
-.fit {
-  width: 100%;
-}
-
-.fit2 {
+.fit, .fit2, .fit3, .fit4 {
   width: 100%;
 }
 
