@@ -124,7 +124,7 @@
     <script src="js/bootstrap.min.js"></script>
 
 <script>
-function a() {
+function always() {
   var videoDiv = document.querySelector('.fit')
   var getWidth = $(videoDiv).width()
   return videoDiv.style.height = (getWidth / 16 * 9 + 'px').toString()
@@ -147,12 +147,16 @@ var videoDiv2 = document.querySelector('.fit4')
 var getWidthy = $(videoDiv2).width()
 videoDiv2.style.height = (getWidthy / 16 * 9 + 'px').toString()
 }
-a()
+
+always()
 b()
 c()
 d()
 
-
+window.addEventListener('resize', always, false)
+window.addEventListener('resize', b, false)
+window.addEventListener('resize', c, false)
+window.addEventListener('resize', d, false)
 
 </script>
 
