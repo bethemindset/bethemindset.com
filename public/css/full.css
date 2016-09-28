@@ -107,3 +107,18 @@ footer {
   text-align: center;
   min-height: 100px;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px)  {
+
+  .outsidePadding {
+    padding: 0px 5px;
+  }
+
+  .fit, .fit2, .fit3, .fit4 {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+}
