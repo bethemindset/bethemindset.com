@@ -18,11 +18,15 @@ body {
 /* NAVIGATION */
 
 #navCOLOR {
-  background-color: black;
+  background-color: white;
 }
 #navURL {
     color: #f03e53;
     font-family: 'Roboto Slab', serif;
+}
+
+#fuckBoy:hover, #fuckBoy2:hover, #fuckBoy3:hover {
+  color: black;
 }
 
 .navFONT {
