@@ -10,3 +10,13 @@ window.onscroll = function (e) {
   navFontColor3.style.color = '#000000'
   navFontColor4.style.color = '#000000'
 }
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() == 0) {
+      navBackground.style.backgroundColor = 'transparent'
+      navFontColor.style.color = '#ffffff'
+      navFontColor2.style.color = '#ffffff'
+      navFontColor3.style.color = '#ffffff'
+      navFontColor4.style.color = '#ffffff'
+    }
+});
