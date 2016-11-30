@@ -18,6 +18,7 @@
   "homepage": "https://github.com/bethemindset/bethemindset.com#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery": "^3.1.0"
+    "jquery": "^3.1.0",
+    "rrssb": "^1.10.0"
   }
 }
