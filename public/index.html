@@ -28,8 +28,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
     <link href="css/full.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/rrssb.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,13 +40,50 @@
 
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!-- Navigation -->
-    <nav id="navCOLOR" class="navbar navbar-inverse navbar-fixed-top navCOLOR" role="navigation">
+  <nav id="testing123" class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                  <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand page-scroll" href="#page-top">
+                  <img src="images/btmcopy.png" alt="some_text">
+              </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+              <ul class="nav navbar-nav">
+                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                  <li class="hidden">
+                      <a href="#page-top"></a>
+                  </li>
+                  <li>
+                      <a class="page-scroll headeritem testy1" href="#about">About</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll headeritem testy2" href="#whatwedo">what we do</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll headeritem testy3" href="#news">News</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll headeritem testy4" href="#contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+
+  <!-- Navigation -->
+<!--    <nav id="navCOLOR" class="navbar navbar-inverse navbar-fixed-top navCOLOR" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+<!--            <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -54,9 +91,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a id="navURL" class="navee navbar-brand" href="#">BeTheMindset.com</a>
-            </div>
+            </div> -->
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<!--            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="#videos" id="fuckBoy" class="navFONT">Videos</a>
@@ -68,7 +105,7 @@
                         <a href="#footy" id="fuckBoy3" class="navFONT">Contact</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -192,7 +229,6 @@ window.addEventListener('resize', d, false)
 </script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery.1.10.2.min.js"><\/script>')</script>
-<script src="js/rrssb.min.js"></script>
 </body>
 
 </html>
