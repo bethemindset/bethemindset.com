@@ -237,7 +237,7 @@ b()
 c()
 d()
 
-window.addEventListener('resize', always, true)
+window.addEventListener('resize', always, false)
 window.addEventListener('resize', b, false)
 window.addEventListener('resize', c, false)
 window.addEventListener('resize', d, false)
@@ -246,40 +246,6 @@ window.addEventListener('resize', d, false)
 
 
 
-
-function always() {
-  var videoDiv = document.querySelector('.fit')
-  var getWidth = $(videoDiv).width()
-  return videoDiv.style.height = (getWidth / 16 * 9.125 + 'px').toString()
-}
-
-function b() {
-var videoDiv2 = document.querySelector('.fit2')
-var getWidthy = $(videoDiv2).width()
-videoDiv2.style.height = (getWidthy / 16 * 9.125 + 'px').toString()
-}
-
-function c() {
-var videoDiv2 = document.querySelector('.fit3')
-var getWidthy = $(videoDiv2).width()
-videoDiv2.style.height = (getWidthy / 16 * 9.125 + 'px').toString()
-}
-
-function d() {
-var videoDiv2 = document.querySelector('.fit4')
-var getWidthy = $(videoDiv2).width()
-videoDiv2.style.height = (getWidthy / 16 * 9.125 + 'px').toString()
-}
-
-always()
-b()
-c()
-d()
-
-window.addEventListener('resize', always, true)
-window.addEventListener('resize', b, false)
-window.addEventListener('resize', c, false)
-window.addEventListener('resize', d, false)
 
 
 
