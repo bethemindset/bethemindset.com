@@ -167,18 +167,18 @@
     </div>
     <div class="row">
       <div class="col-md-6">
-        <iframe class="fit" src="https://www.youtube.com/embed/g-jwWYX7Jlo" frameborder="0" allowfullscreen></iframe>
+        <iframe class="fit5" src="https://www.youtube.com/embed/g-jwWYX7Jlo" frameborder="0" allowfullscreen></iframe>
       </div>
      <div class="col-md-6">
-        <iframe class="fit2" src="https://www.youtube.com/embed/ZOy0YgUDwDg" frameborder="0" allowfullscreen></iframe>
+        <iframe class="fit6" src="https://www.youtube.com/embed/ZOy0YgUDwDg" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
       <div class="row">
         <div class="col-md-6">
-          <iframe class="fit3" src="https://www.youtube.com/embed/FhzNSPiqO0M" frameborder="0" allowfullscreen></iframe>
+          <iframe class="fit7" src="https://www.youtube.com/embed/FhzNSPiqO0M" frameborder="0" allowfullscreen></iframe>
         </div>
        <div class="col-md-6">
-          <iframe class="fit4" src="https://www.youtube.com/embed/D_Vg4uyYwEk" frameborder="0" allowfullscreen></iframe>
+          <iframe class="fit8" src="https://www.youtube.com/embed/D_Vg4uyYwEk" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
   </div>
@@ -208,7 +208,7 @@
     <script src="js/bootstrap.min.js"></script>
 
 <script>
-function always() {
+function a() {
   var videoDiv = document.querySelector('.fit')
   var getWidth = $(videoDiv).width()
   return videoDiv.style.height = (getWidth / 16 * 9.125 + 'px').toString()
@@ -232,15 +232,47 @@ var getWidthy = $(videoDiv2).width()
 videoDiv2.style.height = (getWidthy / 16 * 9.125 + 'px').toString()
 }
 
-always()
+function e() {
+var videoDiv2 = document.querySelector('.fit5')
+var getWidthy = $(videoDiv2).width()
+videoDiv2.style.height = (getWidthy / 16 * 9.125 + 'px').toString()
+}
+
+function f() {
+var videoDiv2 = document.querySelector('.fit6')
+var getWidthy = $(videoDiv2).width()
+videoDiv2.style.height = (getWidthy / 16 * 9.125 + 'px').toString()
+}
+
+function g() {
+var videoDiv2 = document.querySelector('.fit7')
+var getWidthy = $(videoDiv2).width()
+videoDiv2.style.height = (getWidthy / 16 * 9.125 + 'px').toString()
+}
+
+function h() {
+var videoDiv2 = document.querySelector('.fit8')
+var getWidthy = $(videoDiv2).width()
+videoDiv2.style.height = (getWidthy / 16 * 9.125 + 'px').toString()
+}
+
+a()
 b()
 c()
 d()
+e()
+f()
+g()
+h()
 
-window.addEventListener('resize', always, false)
+window.addEventListener('resize', a, false)
 window.addEventListener('resize', b, false)
 window.addEventListener('resize', c, false)
 window.addEventListener('resize', d, false)
+window.addEventListener('resize', e, false)
+window.addEventListener('resize', f, false)
+window.addEventListener('resize', g, false)
+window.addEventListener('resize', h, false)
 
 
 

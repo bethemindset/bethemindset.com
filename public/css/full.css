@@ -99,7 +99,7 @@ iframe {
   border-radius: 2px;
 }
 
-.fit, .fit2, .fit3, .fit4 {
+.fit, .fit2, .fit3, .fit4, .fit5, .fit6, .fit7, .fit8 {
   width: 100%;
   margin-bottom: 25px;
 }
@@ -126,7 +126,7 @@ footer {
     padding: 0px 5px;
   }
 
-  .fit, .fit2, .fit3, .fit4 {
+  .fit, .fit2, .fit3, .fit4, .fit5, .fit6, .fit7, .fit8 {
     width: 100%;
     margin-bottom: 5px;
   }
