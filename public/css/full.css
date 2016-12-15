@@ -41,7 +41,7 @@ a.page-scroll.headeritem {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover;1
 }
 
 /* MAIN PHOTO */
@@ -85,7 +85,7 @@ a.page-scroll.headeritem {
 }
 
 #videos {
-  background-color: #7E7D7D;
+  background-color: #151718 ;
 }
 
 .movies {
