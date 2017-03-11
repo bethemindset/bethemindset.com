@@ -1,7 +1,17 @@
-document.querySelector('.buttony').style.fontSize = '100px';
+const quiz = Math.floor(Math.random() * 4)
 
-var paul = document.querySelector('.buttony')
+var buttonClick = document.querySelector('.randomStudentHTML')
+buttonClick.addEventListener('click', function(event) {
+  var randomStudent = new Student('name', quiz);
+  console.log(randomStudent)
+})
 
-paul.onclick = function() {
-  paul.innerText = 'text here'
+function Student(name, quiz, grade, gpa) {
+  this.name = name;
+  this.quiz = quiz;
+  this.grade = grade
+  this.gpa = gpa
 }
+
+var randomStudent = new Student('name', quiz);
+console.log(randomStudent)
