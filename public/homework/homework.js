@@ -59,11 +59,3 @@ var oneToTwo = Math.floor(Math.random() * 2) + 1
   for (var i = 0; i < oneToTwo; i++) {
     exam.push(Math.floor(Math.random() * 101))
 }
-
-
-scores = 7
-
-quizAverage = 7
-examAverage = 7
-classAverage = 7
-gpa = 7
