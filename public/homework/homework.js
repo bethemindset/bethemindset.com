@@ -1,5 +1,4 @@
 
-
 /*Generates a random student on button click*/
 var buttonClick = document.querySelector('.randomStudentHTML')
 buttonClick.addEventListener('click', function(event) {
@@ -31,7 +30,6 @@ function Student ( opts ) {
 function makeOpts(){
   /* Object creation of random student */
   var opts = {}
-
   /* HOMEWORK */
 
   opts.homework = []
@@ -40,6 +38,7 @@ function makeOpts(){
   //3-5 grades from 0-100
   while(threeToFive--)
     opts.homework.push(Math.floor(Math.random() * 101))
+
 
   /* HOMEWORK AVERAGE */
 
@@ -59,6 +58,10 @@ function makeOpts(){
   while (zeroToThree--)
     opts.quiz.push(Math.floor(Math.random() * 101))
 
+  /* QUIZ AVERAGE */
+
+  // CODE HERE
+
   /* EXAM */
 
   opts.exam = []
@@ -68,7 +71,13 @@ function makeOpts(){
   while (oneToTwo--)
     opts.exam.push(Math.floor(Math.random() * 101))
 
+  /* EXAM AVERAGE */
+
+  // CODE HERE
+
+
   opts.name = makeName()
+  console.log(opts)
   return opts
 }
 
