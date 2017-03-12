@@ -76,6 +76,8 @@ function makeName (){
   var nameBank = [
     'William','Mason','Noah','James','Elijah','Aiden','Ethan','Bentley','Jackson','Liam',
     'Emma','Ava','Olivia','Madison','Isabella','Sophia','Elizabeth','Brooklyn','Chloe','Ella',
+    'Santiago','Mateo','Matías','Diego','Sebastián','Nicolás','Miguel','Angel','Iker','Alejandro','Samuel',
+    'Emma', 'Marie', 'Petra', 'Victoria', 'Leah', 'Anna'
   ]
   return nameBank[ Math.floor(Math.random() * nameBank.length) ]
 }
