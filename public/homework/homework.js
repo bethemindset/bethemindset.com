@@ -4,7 +4,15 @@
 var buttonClick = document.querySelector('.randomStudentHTML')
 buttonClick.addEventListener('click', function(event) {
   var randomStudent = new Student ( makeOpts() )
-  console.log(randomStudent)
+  var tr = document.createElement('tr')
+  for (var i in randomStudent) {
+    var td = document.createElement('td')
+    td.textContent = randomStudent[i]
+    tr.append(td)
+  }
+  document
+    .querySelector('tbody')
+    .append(tr)
 })
 
 function Student ( opts ) {
@@ -60,5 +68,14 @@ function makeOpts(){
   while (oneToTwo--)
     opts.exam.push(Math.floor(Math.random() * 101))
 
+  opts.name = makeName()
   return opts
+}
+
+function makeName (){
+  var nameBank = [
+    'William','Mason','Noah','James','Elijah','Aiden','Ethan','Bentley','Jackson','Liam',
+    'Emma','Ava','Olivia','Madison','Isabella','Sophia','Elizabeth','Brooklyn','Chloe','Ella',
+  ]
+  return nameBank[ Math.floor(Math.random() * nameBank.length) ]
 }
