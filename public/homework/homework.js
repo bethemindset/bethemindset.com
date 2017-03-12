@@ -16,7 +16,7 @@ buttonClick.addEventListener('click', function(event) {
 })
 
 function Student ( opts ) {
-  this.name                 = opts.name || 'paul'
+  this.name                 = opts.name || 'default'
   this.homework             = opts.homework || 'default'
   this.quiz                 = opts.quiz || 'default'
   this.exam                 = opts.exam || 'default'
