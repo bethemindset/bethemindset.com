@@ -21,6 +21,10 @@ table {
     border-color: white;
 }
 
+.thColor {
+  color: #F7CA18;
+}
+
 @import "compass/css3";
 
 /* More practical CSS...
