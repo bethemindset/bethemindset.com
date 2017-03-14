@@ -90,5 +90,3 @@ function makeName (){
   ]
   return nameBank[ Math.floor(Math.random() * nameBank.length) ]
 }
-
-document.querySelector(".erikB").src="../images/erikB.jpg";
