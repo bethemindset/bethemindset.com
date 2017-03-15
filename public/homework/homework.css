@@ -1,4 +1,5 @@
 body {
+    background-size: cover;
     background-color: #34495E;
     text-align: center;
 }
@@ -19,32 +20,19 @@ table {
     background-color: #336E7B;
     border-width: 1px;
     border-color: white;
+
 }
 
 .thColor {
-  color: #F7CA18;
+  color: white;
 }
-
-@import "compass/css3";
-
-/* More practical CSS...
-// using mobile first method (IE8,7 requires respond.js polyfill https://github.com/scottjehl/Respond)*/
-
-$breakpoint-alpha: 480px; // adjust to your needs
-
 .rwd-table {
   margin: 1em 0;
   min-width: 300px; /* adjust to your needs */
 
   tr {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-  }
 
-  th {
-    display: none; /* for accessibility, use a visually hidden method here instead! Thanks, reddit! */
-    color: green;
-  }
+}
 
   td {
     display: block;
@@ -72,6 +60,7 @@ $breakpoint-alpha: 480px; // adjust to your needs
   }
 
   th, td {
+
     text-align: left;
     @media (min-width: $breakpoint-alpha) {
       display: table-cell;
@@ -108,7 +97,7 @@ h1 {
 }
 
 .rwd-table {
-  background: #34495E;
+  background: rgb(41,41,41);
   color: #fff;
   border-radius: .4em;
   overflow: hidden;
@@ -116,12 +105,18 @@ h1 {
     border-color: lighten(#34495E, 10%);
   }
   th, td {
+
     margin: .5em 1em;
     @media (min-width: $breakpoint-alpha) {
       padding: 1em !important;
     }
   }
   th, td:before {
+
     color: #dd5;
   }
+}
+tr {
+      border-top: 5px solid #ddd;
+      border-bottom: 1px solid #ddd;
 }

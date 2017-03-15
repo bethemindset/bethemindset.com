@@ -29,52 +29,48 @@ function Student ( opts ) {
 
 function makeOpts(){
   /* Object creation of random student */
+
+    /*      Homework    */
   var opts = {}
-  /* HOMEWORK */
 
   opts.homework = []
-  //random number from 3-5
+
   var threeToFive = Math.floor(Math.random() * 3) + 3
-  //3-5 grades from 0-100
-  while(threeToFive--)
-    opts.homework.push(Math.floor(Math.random() * 101))
-
-
-  /* HOMEWORK AVERAGE */
-
+  // 3 to 5 homework grades
+  while(threeToFive--) {
+      opts.homework.push(Math.floor(Math.random() * 101))
+  }
+  /*      Homework Average   */
   opts.homeworkAverage = []
 
-  var total = 0, l = opts.homework.length;
+  var total = 0
+  var l = opts.homework.length
   while(l--)
     total += opts.homework[l]
   opts.homeworkAverage.push(total / opts.homework.length)
 
-  /* QUIZ */
+//Quiz//
+opts.quiz = []
+var zeroToThree = Math.floor(Math.random() * 3) + 1
+    //0-3
+    while (zeroToThree--) {
+        opts.quiz.push(Math.floor(Math.random() * 101))
+    }
 
-  opts.quiz = []
-  //random number from 0-3
-  var zeroToThree = Math.floor(Math.random() * 4)
-  //0-3 grades from 0-100
-  while (zeroToThree--)
-    opts.quiz.push(Math.floor(Math.random() * 101))
+    opts.quizAverage = []
 
-  /* QUIZ AVERAGE */
-
-  // CODE HERE
-
-  /* EXAM */
-
-  opts.exam = []
-  //random number from 1-2
-  var oneToTwo = Math.floor(Math.random() * 2) + 1
-  //1-2 grades from 0-100
-  while (oneToTwo--)
-    opts.exam.push(Math.floor(Math.random() * 101))
-
-  /* EXAM AVERAGE */
-
-  // CODE HERE
-
+    var quizTotal = 0
+    var f = opts.quizAverage.length
+    while(f--)
+      total += opts.quiz[f]
+    opts.quizAverage.push(total / opts.quiz.length)
+//exams
+opts.exam = []
+var zeroToTwo = Math.floor(Math.random() * 3) + 0
+    //0-3
+    while (zeroToTwo--) {
+        opts.exam.push(Math.floor(Math.random() * 80))
+    }
 
   opts.name = makeName()
   console.log(opts)
