@@ -57,6 +57,7 @@ var zeroToThree = Math.floor(Math.random() * 3) + 1
         opts.quiz.push(Math.floor(Math.random() * 101))
     }
 
+//Quiz Average
     opts.quizAverage = []
 
     var quizTotal = 0
