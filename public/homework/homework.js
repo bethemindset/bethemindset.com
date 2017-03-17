@@ -15,16 +15,10 @@ buttonClick.addEventListener('click', function(event) {
 })
 
 function Student ( opts ) {
-  this.name                 = opts.name || 'default'
-  this.homework             = opts.homework || 'default'
-  this.quiz                 = opts.quiz || 'default'
-  this.exam                 = opts.exam || 'default'
-  this.scores               = opts.scores || 'default'
-  this.homeworkAverage      = opts.homeworkAverage || 'default'
-  this.quizAverage          = opts.quizAverage || 'default'
-  this.examAverage          = opts.examAverage || 'default'
-  this.classAverage         = opts.classAverage || 'default'
-  this.gpa                  = opts.gpa || 'default'
+  this.name            = opts.name || 'default'
+  this.age             = opts.age || 'default'
+  this.grades          = opts.grades || 'default'
+
 }
 
 function makeOpts(){
@@ -33,50 +27,25 @@ function makeOpts(){
     /*      Homework    */
   var opts = {}
 
-  opts.homework = []
+  opts.age = []
 
-  var threeToFive = Math.floor(Math.random() * 3) + 3
+  var threeToFive = Math.floor(Math.random() + 1)
   // 3 to 5 homework grades
   while(threeToFive--) {
-      opts.homework.push(Math.floor(Math.random() * 101))
+      opts.age.push(Math.floor(Math.random() * 50))
   }
-  /*      Homework Average   */
-  opts.homeworkAverage = []
 
-  var total = 0
-
-  var l = opts.homework.length;
-
-  while(l--)
-    total += opts.homework[l]
-  opts.homeworkAverage.push(total / opts.homework.length)
 
 
   /* QUIZ */
 
-  opts.quiz = []
-  //random number from 0-3
-  var zeroToThree = Math.floor(Math.random() * 4)
-  //0-3 grades from 0-100
-  while (zeroToThree--)
-    opts.quiz.push(Math.floor(Math.random() * 101))
+  opts.grades = []
 
-  /* QUIZ AVERAGE */
-  opts.quizAverage = []
-  var quizTotal = 0
-  var q = opts.quiz.length;
-
-  while(q--)
-    quizTotal += opts.quiz[q]
-  opts.quizAverage.push(quizTotal / opts.quiz.length)
-
-/* Exams */
-opts.exam = []
-var zeroToTwo = Math.floor(Math.random() * 3) + 0
-    //0-3
-    while (zeroToTwo--) {
-        opts.exam.push(Math.floor(Math.random() * 80))
-    }
+  var threeToFive = Math.floor(Math.random() + 1)
+  // 3 to 5 homework grades
+  while(threeToFive--) {
+      opts.grades.push(Math.floor(Math.random() * 100))
+  }
 
   opts.name = makeName()
   console.log(opts)
