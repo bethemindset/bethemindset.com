@@ -40,7 +40,19 @@ opts.testGrades = []
 //  opts.name = makeName()
   opts.name = document.getElementById("uniqueID").value
 //  console.log(opts)
+
+honorRoll()
+
   return opts
+}
+
+
+function honorRoll( name2 ) {
+  var name2 = document.getElementById("uniqueID").value
+  var element = document.querySelector('.nameRepeat')
+  element.value = name2
+  console.log(name2)
+  return name2
 }
 
 
