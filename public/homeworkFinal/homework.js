@@ -25,7 +25,7 @@ function makeOpts(){
   var opts = {}
   opts.age = []
 
-  var tenToEighteen = Math.floor(Math.random() * 10) + 9
+  var tenToEighteen = Math.floor(Math.random() * 9) + 10
   // 3 to 5 homework grades
   opts.age.push(tenToEighteen)
 
