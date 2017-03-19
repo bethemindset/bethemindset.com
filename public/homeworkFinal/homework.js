@@ -18,6 +18,7 @@ function Student ( opts ) {
   this.name            = opts.name || 'default'
   this.age             = opts.age || 'default'
   this.grades          = opts.grades || 'default'
+  this.quiz            = opts.quiz || 'default'
 
 }
 
@@ -35,17 +36,13 @@ function makeOpts(){
       opts.age.push(Math.floor(Math.random() * 50))
   }
 
+/* QUIZ */
 
-
-  /* QUIZ */
-
-  opts.grades = []
-
-  var threeToFive = Math.floor(Math.random() + 1)
-  // 3 to 5 homework grades
-  while(threeToFive--) {
-      opts.grades.push(Math.floor(Math.random() * 100))
-  }
+opts.quiz = []
+   var tenGrades = 10
+   //ten grades from 50-100
+   while (tenGrades--)
+     opts.quiz.push(Math.floor(Math.random() * 50) + 50 )
 
   opts.name = makeName()
   console.log(opts)
