@@ -17,32 +17,25 @@ buttonClick.addEventListener('click', function(event) {
 function Student ( opts ) {
   this.name            = opts.name || 'default'
   this.age             = opts.age || 'default'
-  this.grades          = opts.grades || 'default'
-  this.quiz            = opts.quiz || 'default'
+  this.testGrades            = opts.testGrades || 'default'
 
 }
 
 function makeOpts(){
-  /* Object creation of random student */
-
-    /*      Homework    */
   var opts = {}
-
   opts.age = []
 
-  var threeToFive = Math.floor(Math.random() + 1)
+  var tenToEighteen = Math.floor(Math.random() * 10) + 9
   // 3 to 5 homework grades
-  while(threeToFive--) {
-      opts.age.push(Math.floor(Math.random() * 50))
-  }
+  opts.age.push(tenToEighteen)
 
-/* QUIZ */
+/* Test Grades */
 
-opts.quiz = []
+opts.testGrades = []
    var tenGrades = 10
    //ten grades from 50-100
    while (tenGrades--)
-     opts.quiz.push(Math.floor(Math.random() * 50) + 50 )
+     opts.testGrades.push(Math.floor(Math.random() * 51) + 50 )
 
   opts.name = makeName()
   console.log(opts)
