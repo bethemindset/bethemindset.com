@@ -17,7 +17,7 @@ buttonClick.addEventListener('click', function(event) {
 function Student ( opts ) {
   this.name            = opts.name || 'default'
   this.age             = opts.age || 'default'
-  this.testGrades            = opts.testGrades || 'default'
+  this.testGrades      = opts.testGrades || 'default'
 
 }
 
@@ -37,14 +37,15 @@ opts.testGrades = []
    while (tenGrades--)
      opts.testGrades.push(Math.floor(Math.random() * 51) + 50 )
 
-  opts.name = makeName()
-  console.log(opts)
+//  opts.name = makeName()
+  opts.name = document.getElementById("uniqueID").value
+//  console.log(opts)
   return opts
 }
 
 
 
-function makeName () {
+/* function makeName () {
   var nameBank = [
     'William','Mason','Noah','James','Elijah','Aiden','Ethan','Bentley','Jackson','Liam',
     'Emma','Ava','Olivia','Madison','Isabella','Sophia','Elizabeth','Brooklyn','Chloe','Ella',
@@ -53,3 +54,4 @@ function makeName () {
   ]
   return nameBank[ Math.floor(Math.random() * nameBank.length) ]
 }
+*/
