@@ -54,6 +54,9 @@ document
   .textContent = document
     .querySelector("#uniqueID")
     .value
+document
+  .querySelector(".gradeAverage")
+  .textContent = avg
 }
 
 var age = 16 || 17 || 18
@@ -63,6 +66,9 @@ document
   .textContent = document
     .querySelector("#uniqueID")
     .value
+document
+  .querySelector(".ageOver15")
+  .textContent = age
 }
 
  console.log(opts.testGrades)
