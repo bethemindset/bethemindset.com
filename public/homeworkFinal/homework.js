@@ -41,25 +41,34 @@ opts.testGrades = []
   opts.name = document.getElementById("uniqueID").value
 //  console.log(opts)
 
+  var total = 0;
+  for(var i = 0; i < opts.testGrades.length; i++) {
+      total += opts.testGrades[i];
+  }
+  var avg = total / opts.testGrades.length;
+  console.log(avg)
 
+if ( avg > 75 ) {
 document
   .querySelector(".nameRepeat")
   .textContent = document
     .querySelector("#uniqueID")
     .value
+}
 
+var age = 16 || 17 || 18
+if ( age ) {
+document
+  .querySelector(".nameRepeat2")
+  .textContent = document
+    .querySelector("#uniqueID")
+    .value
+}
+
+ console.log(opts.testGrades)
 
   return opts
 }
-
-
-function honorRoll( name2 ) {
-  name2 = []
-  name2.push(document.getElementById("uniqueID").value)
-  return name2
-}
-
-
 
 /* function makeName () {
   var nameBank = [
