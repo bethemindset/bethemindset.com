@@ -59,6 +59,7 @@ document
   .textContent = avg
 }
 
+console.log(avg)
 var age = 16 || 17 || 18
 if ( age ) {
 document
