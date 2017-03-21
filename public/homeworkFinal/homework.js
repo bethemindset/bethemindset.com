@@ -23,10 +23,11 @@ function Student ( opts ) {
 
 function makeOpts(){
   var opts = {}
-  opts.age = []
 
+/* Random age generator from 10 - 18 */
+
+  opts.age = []
   var tenToEighteen = Math.floor(Math.random() * 9) + 10
-  // 3 to 5 homework grades
   opts.age.push(tenToEighteen)
 
 /* Test Grades */
@@ -37,15 +38,15 @@ opts.testGrades = []
    while (tenGrades--)
      opts.testGrades.push(Math.floor(Math.random() * 51) + 50 )
 
-//  opts.name = makeName()
   opts.name = document.getElementById("uniqueID").value
-//  console.log(opts)
 
   var total = 0;
   for(var i = 0; i < opts.testGrades.length; i++) {
       total += opts.testGrades[i];
   }
   var avg = total / opts.testGrades.length;
+
+/* Second table */
 
 if ( avg > 80 ) {
 
@@ -62,6 +63,8 @@ document
 
 }
 
+/* Third table */
+
 if (opts.age > 15) {
 
   var tr = document.createElement('tr')
@@ -72,21 +75,10 @@ if (opts.age > 15) {
   td.textContent = opts.age
   tr.append(td)
   document
-    .querySelector('.over15')
+    .querySelector('.rwd-tbody-over15')
     .append(tr)
 
 }
 
   return opts
 }
-
-/* function makeName () {
-  var nameBank = [
-    'William','Mason','Noah','James','Elijah','Aiden','Ethan','Bentley','Jackson','Liam',
-    'Emma','Ava','Olivia','Madison','Isabella','Sophia','Elizabeth','Brooklyn','Chloe','Ella',
-    'Santiago','Mateo','Matías','Diego','Sebastián','Nicolás','Miguel','Angel','Iker','Alejandro','Samuel',
-    'Emma', 'Marie', 'Petra', 'Victoria', 'Leah', 'Anna'
-  ]
-  return nameBank[ Math.floor(Math.random() * nameBank.length) ]
-}
-*/
