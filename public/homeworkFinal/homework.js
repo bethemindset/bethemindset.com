@@ -46,9 +46,8 @@ opts.testGrades = []
       total += opts.testGrades[i];
   }
   var avg = total / opts.testGrades.length;
-  console.log(avg)
 
-if ( avg > 75 ) {
+if ( avg > 80 ) {
 
 var tr = document.createElement('tr')
 var td = document.createElement('td')
@@ -63,20 +62,20 @@ document
 
 }
 
-console.log(avg)
-var age = 16 || 17 || 18
-if ( age ) {
-document
-  .querySelector(".nameRepeat2")
-  .textContent = document
-    .querySelector("#uniqueID")
-    .value
-document
-  .querySelector(".ageOver15")
-  .textContent = age
-}
+if (opts.age > 15) {
 
- console.log(opts.testGrades)
+  var tr = document.createElement('tr')
+  var td = document.createElement('td')
+  td.textContent = document.querySelector("#uniqueID").value
+  tr.append(td)
+  td = document.createElement('td')
+  td.textContent = opts.age
+  tr.append(td)
+  document
+    .querySelector('.over15')
+    .append(tr)
+
+}
 
   return opts
 }
