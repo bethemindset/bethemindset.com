@@ -49,14 +49,18 @@ opts.testGrades = []
   console.log(avg)
 
 if ( avg > 75 ) {
+
+var tr = document.createElement('tr')
+var td = document.createElement('td')
+td.textContent = document.querySelector("#uniqueID").value
+tr.append(td)
+td = document.createElement('td')
+td.textContent = avg
+tr.append(td)
 document
-  .querySelector(".nameRepeat")
-  .textContent = document
-    .querySelector("#uniqueID")
-    .value
-document
-  .querySelector(".gradeAverage")
-  .textContent = avg
+  .querySelector('.rwd-tbody-o75')
+  .append(tr)
+
 }
 
 console.log(avg)
