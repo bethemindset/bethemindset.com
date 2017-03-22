@@ -1,7 +1,11 @@
 body {
-    background-size: cover;
-    background-color: #34495E;
-    text-align: center;
+  padding: 0 2em;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background: rgb(156,43,247);
+  text-align: center;
 }
 table {
     background-color: grey;
@@ -10,7 +14,6 @@ table {
 }
 .buttony {
     color: white;
-
 }
 .randomStudentHTML {
     font-size: 20px;
@@ -81,14 +84,7 @@ table {
 
 @import 'http://fonts.googleapis.com/css?family=Montserrat:300,400,700';
 
-body {
-  padding: 0 2em;
-  font-family: Montserrat, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  color: #444;
-  background: #eee;
-}
+
 
 h1 {
   font-weight: normal;
@@ -111,11 +107,7 @@ h1 {
       padding: 1em !important;
     }
   }
-  th, td:before {
 
-    color: #dd5;
-  }
-}
 tr {
       border-top: 5px solid #ddd;
       border-bottom: 1px solid #ddd;
