@@ -7,6 +7,11 @@ body {
   background: rgb(156,43,247);
   text-align: center;
 }
+.inputElement {
+    height: 30px;
+    font-size: 20px;
+    color:  rgb(156,43,247);
+}
 table {
     background-color: grey;
     width: 100%;
@@ -20,7 +25,7 @@ table {
     width: 300px;
     height: 40px;
     color: white;
-    background-color: #336E7B;
+    background-color:  rgb(41,41,41);
     border-width: 1px;
     border-color: white;
 
